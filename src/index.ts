@@ -35,3 +35,8 @@ export function doGet(e: GoogleAppsScript.Events.DoGet): void {
 export function doPost(e: GoogleAppsScript.Events.DoPost): void {
   console.log(e);
 }
+
+export const onOpenTrigger = ScriptApp.newTrigger("onOpen")
+  .forSpreadsheet("1ofhhfs8hgX8R6HAOzL1uyzuEnVK4J5_BM6lhRGlBwU4")
+  .onOpen()
+  .create();
